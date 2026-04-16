@@ -19,7 +19,7 @@ Estas funcionalidades son la base para ampliar el proyecto con features como ges
 
 El proyecto sigue el diseño de un prototipo creado en Figma. Añade aquí el enlace al prototipo cuando lo tengas:
 
-Figma prototype: [AÑADE_AQUÍ_EL_ENLACE_DE_FIGMA]
+Figma prototype: https://www.figma.com/design/faQjNM8rjgUz6IJk6c36dn/Zenvy-Shop--E-commerce-?node-id=0-1&t=8kkPvoXaQY611HcF-1
 
 ## Estructura del repositorio
 
