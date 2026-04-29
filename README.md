@@ -4,7 +4,7 @@ Pequeña aplicación de ejemplo para un sistema de comercio electrónico, desarr
 
 ## Descripción
 
-El proyecto implementa la estructura básica de un front-end de escritorio para un e-commerce: pantallas definidas en FXML, controladores Java para la lógica de interfaz y una clase de modelo simple para usuarios. Está pensado como un prototipo funcional que sigue el diseño visual definido en un prototipo de Figma (añade abajo el enlace al prototipo).
+El proyecto implementa la estructura básica de un front-end de escritorio para un e-commerce: pantallas definidas en FXML, controladores Java para la lógica de interfaz y una clase de modelo simple para usuarios. Está pensado como un prototipo funcional que sigue el diseño visual definido en un prototipo de Figma.
 
 ## Funcionalidades principales
 
@@ -13,11 +13,11 @@ El proyecto implementa la estructura básica de un front-end de escritorio para 
 - Panel de administración con vistas FXML (`admin.fxml`) y controlador (`AdminController`).
 - Modelo de usuario simple (`model/Usuario.java`) para representar datos de usuario.
 
-Estas funcionalidades son la base para ampliar el proyecto con features como gestión de productos, carrito, persistencia en base de datos, etc.
+Estas funcionalidades son la base para ampliar el proyecto con features como gestión de productos, carrito, etc.
 
 ## Diseño y prototipo
 
-El proyecto sigue el diseño de un prototipo creado en Figma. Añade aquí el enlace al prototipo cuando lo tengas:
+El proyecto sigue el diseño de un prototipo creado en Figma.
 
 Figma prototype: https://www.figma.com/design/faQjNM8rjgUz6IJk6c36dn/Zenvy-Shop--E-commerce-?node-id=0-1&t=8kkPvoXaQY611HcF-1
 
@@ -43,23 +43,3 @@ ant clean; ant jar
 # o para ejecutar (según target disponible en build.xml):
 ant run
 ```
-
-Nota: adapta los comandos según tu configuración local. El proyecto está configurado para usarse con NetBeans, por lo que ejecutar desde el IDE suele manejar dependencias y rutas de recursos automáticamente.
-
-## Desarrollo y contribuciones
-
-Si vas a trabajar en el proyecto, crea ramas con nombre descriptivo y abre pull requests para integrar cambios. Algunas ideas de mejoras:
-
-- Persistencia con una base de datos (JDBC, JPA).
-- Gestión de productos y carrito de compras.
-- Mejoras de validación y seguridad en autenticación.
-- Tests unitarios y de integración.
-
-## Licencia
-
-Incluye aquí la licencia del proyecto (por ejemplo MIT) si quieres compartirlo públicamente.
-
----
-
-Si quieres, puedo añadir una plantilla básica de CONTRIBUTING.md, tests unitarios iniciales o integrar el enlace de Figma cuando me lo facilites.
-
