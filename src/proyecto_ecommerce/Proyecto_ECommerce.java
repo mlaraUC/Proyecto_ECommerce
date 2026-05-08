@@ -15,6 +15,7 @@ public class Proyecto_ECommerce extends Application {
         primaryStage.setTitle("Login");
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
+        primaryStage.centerOnScreen();
         primaryStage.show();
     }
     

@@ -9,8 +9,16 @@ public class Auth {
 
     public Auth() {
         this.usuarios = new ArrayList<>();
-        usuarios.add(new Usuario("mario@prueba.com", "mario123"));
-        usuarios.add(new Usuario("admin@prueba.com", "admin123"));
+        usuarios.add(new Usuario("Mario Lara", "mario@prueba.com", "mario123"));
+        usuarios.add(new Usuario("Admin", "admin@prueba.com", "admin123"));
+    }
+
+    public List<Usuario> getUsuarios() {
+        return usuarios;
+    }
+
+    public void setUsuarios(List<Usuario> usuarios) {
+        this.usuarios = usuarios;
     }
     
     public boolean validarCredenciales(String email, String pass) {
@@ -28,5 +36,9 @@ public class Auth {
         if(!isValid) return -1;
         if(email.equals("admin@prueba.com")) return 1;
         return 2;
+    }
+    
+    public void crearUsuario(String user, String email, String pass){
+        usuarios.add(new Usuario(user, email, pass));
     }
 }
