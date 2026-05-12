@@ -1,38 +1,44 @@
 package model;
 
-public class Usuario {
+import java.io.Serializable;
+
+public class Usuario implements Serializable {
+    private static final long serialVersionUID = 1L;
     
-    private String userName;
+    private String nombre;
+    private String rol;
     private String email;
     private String password;
 
-    public Usuario(String userName, String email, String password) {
-        this.userName = userName;
+    public Usuario(String nombre, String rol, String email, String password) {
+        this.nombre = nombre;
+        this.rol = rol;
         this.email = email;
         this.password = password;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public String getRol() {
+        return rol;
     }
-    
+
     public String getEmail() {
         return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public String getPassword() {
         return password;
     }
-
-    public void setPassword(String password) {
-        this.password = password;
+    
+    @Override
+    public String toString() {
+        return "Usuario{" + 
+            "nombre='" + nombre + 
+            "', rol='" + rol + 
+            "', email='" + email +
+            "', password='" + password +"}";
     }
 }

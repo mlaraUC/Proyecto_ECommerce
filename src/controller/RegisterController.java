@@ -54,9 +54,8 @@ public class RegisterController implements Initializable {
             errorMessage("Todos los campos son requeridos");
             return;
         }
-        auth.crearUsuario(user, correo, password);
+        auth.crearUsuario(user, "cliente", correo, password);
         limpiarCampos();
-        System.out.println(auth.getUsuarios().size());
     }
     
     private void errorMessage(String context) {
