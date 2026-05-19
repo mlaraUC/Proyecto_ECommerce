@@ -1,4 +1,4 @@
-# Proyec## Funcionalidades principales
+# Proyecto_ECommerce funcionalidades principales actualmente
 
 ### Autenticación y gestión de usuarios
 - **Inicio de sesión** - Validación de credenciales mediante clase `Auth`.
