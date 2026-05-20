@@ -27,7 +27,7 @@ public class UserController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        loadView("/proyecto_ecommerce/shop.fxml");
+        showShop();
     }
     
     public void loadView(String fxml) {
@@ -62,5 +62,15 @@ public class UserController implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    
+    @FXML
+    private void showShop() {
+        loadView("/proyecto_ecommerce/shop.fxml");
+    }
+    
+    @FXML
+    private void showWishList() {
+        loadView("/proyecto_ecommerce/wishlist.fxml");
     }
 }
